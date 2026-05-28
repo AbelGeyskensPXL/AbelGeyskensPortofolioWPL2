@@ -1,0 +1,108 @@
+{
+  "site": {
+    "brand": "Portfolio.",
+    "nav": [
+      { "label": "Work", "href": "index.html" },
+      { "label": "WPL2 Case", "href": "wpl2.html" },
+      { "label": "Downloads", "href": "wpl.html" }
+    ],
+    "footer": {
+      "copyright": "Student Portfolio, PXL University.",
+      "tagline": "Built with grit."
+    }
+  },
+  "about": {
+    "eyebrow": "Over jezelf — about me",
+    "headline": "Student at PXL — building sharp digital things.",
+    "bio": "I study Applied Computer Science and I'm interested in the intersection of design and engineering. I care about clean code, clear interfaces, and shipping work that actually helps people. Outside of class, I tinker with side projects, read about typography, and play guitar.",
+    "skills": ["TypeScript", "React", "Node.js", "UI Design", "Figma", "SQL"],
+    "portrait": "assets/profile.jpg"
+  },
+  "projects": [
+    {
+      "title": "Taskline",
+      "blurb": "A focused task manager built around a single daily list. Designed and built end-to-end as a personal project.",
+      "tech": ["React", "TypeScript", "Tailwind"],
+      "img": "assets/project-1.jpg"
+    },
+    {
+      "title": "Pearnax Store",
+      "blurb": "Editorial e-commerce concept for a small electronics brand. School project — design system, product page, and checkout flow.",
+      "tech": ["Figma", "Next.js", "Stripe"],
+      "img": "assets/project-2.jpg"
+    },
+    {
+      "title": "Insight Dashboard",
+      "blurb": "Internship work: analytics dashboard for tracking user behavior across web properties. Built the front-end visualizations.",
+      "tech": ["React", "D3", "REST API"],
+      "img": "assets/project-3.jpg"
+    }
+  ],
+  "free": [
+    { "title": "Music", "body": "I've been playing guitar for eight years. Mostly jazz and ambient — it's how my brain resets between deadlines." },
+    { "title": "Typography", "body": "I collect type specimens and recently started experimenting with variable fonts in CSS. There's a project brewing." },
+    { "title": "Open source", "body": "Small PRs to dev tools I use daily. Even a one-line typo fix counts as showing up." }
+  ],
+  "contact": [
+    { "label": "Email", "value": "student@pxl.be", "href": "mailto:student@pxl.be" },
+    { "label": "LinkedIn", "value": "in/your-name", "href": "https://linkedin.com" },
+    { "label": "GitHub", "value": "@your-name", "href": "https://github.com" }
+  ],
+  "wpl2": {
+    "eyebrow": "Case study — WPL2",
+    "title": "Building a customer insights dashboard during my Work Placement 2.",
+    "meta": "12 weeks · Front-end internship · A mid-sized SaaS company in Hasselt",
+    "sections": [
+      {
+        "title": "Case description",
+        "paragraphs": [
+          "During my second Work Placement at a SaaS company specializing in customer engagement software, I joined the product team responsible for a new analytics product.",
+          "The existing internal tools were powerful but technical. The goal was to expose data through a self-serve dashboard with sensible defaults, fast filters, and clean visualizations.",
+          "I joined at the start of the build phase. The design system existed in Figma but had only been partially implemented in code."
+        ]
+      },
+      {
+        "title": "My contribution",
+        "paragraphs": [
+          "I was responsible for the dashboard's filter system and a set of three core visualization components: a trend line, a segmented bar chart, and a cohort heatmap.",
+          "I worked closely with the product designer to refine interactions, and paired with two senior developers during code review.",
+          "I wrote the internal documentation for the chart library and presented a short demo at the bi-weekly product showcase."
+        ]
+      },
+      {
+        "title": "What I learned",
+        "list": [
+          "Designing for ambiguity — empty states and slow networks are the default, not edge cases.",
+          "Code review as a tool — smaller, focused pull requests win.",
+          "Async communication — write updates that don't require a follow-up call.",
+          "The cost of opinions — architectural decisions have real trade-offs."
+        ]
+      },
+      {
+        "title": "Final result",
+        "paragraphs": [
+          "The dashboard shipped to a closed beta of 40 customers two weeks before my placement ended. Early feedback was positive."
+        ],
+        "deliverables": [
+          "3 production-ready chart components with Storybook documentation",
+          "Reusable filter system with URL-state sync",
+          "Internal chart library README and contribution guide",
+          "Final reflection report (PDF) and slide deck"
+        ]
+      }
+    ]
+  },
+  "downloads": {
+    "wpl2": [
+      { "title": "WPL2 — Final reflection", "meta": "PDF · 1.4 MB", "href": "#", "kind": "PDF" },
+      { "title": "WPL2 — Case study report", "meta": "PDF · 2.1 MB", "href": "#", "kind": "PDF" },
+      { "title": "WPL2 — Presentation slides", "meta": "PDF · 3.2 MB", "href": "#", "kind": "PDF" }
+    ],
+    "wpl1": [
+      { "title": "WPL1 — Assignment 1 (Research)", "meta": "PDF · 980 KB", "href": "#", "kind": "PDF" },
+      { "title": "WPL1 — Assignment 2 (Prototype)", "meta": "ZIP · 12 MB", "href": "#", "kind": "ZIP" },
+      { "title": "WPL1 — Assignment 3 (Reflection)", "meta": "PDF · 720 KB", "href": "#", "kind": "PDF" },
+      { "title": "WPL1 — Complete bundle", "meta": "ZIP · 18 MB", "href": "#", "kind": "ZIP" }
+    ]
+  }
+}
