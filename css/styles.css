@@ -120,8 +120,10 @@ p{color:var(--text-soft)}
 /* ---------- About ---------- */
 .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:start}
 .about-text p{margin-bottom:16px;font-size:1.02rem}
-.skills h3{margin:0 0 14px;font-family:'Inter';font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
-.skills h3+h3{margin-top:28px}
+.skills h3{margin:0 0 14px; font-family:'Inter';font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.chips{
+  margin-bottom: 40px;
+}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips span{
   padding:7px 14px;border-radius:999px;background:#fff;border:1px solid var(--border);
