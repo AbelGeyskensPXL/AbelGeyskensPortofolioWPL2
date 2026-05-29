@@ -1,17 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WPL1 & WPL2 Downloads — Portfolio</title>
-<meta name="description" content="Downloadable deliverables for Work Placement 1 and 2.">
-<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WPL1 &amp; WPL2 Deliverables — Alex Janssens</title>
+<meta name="description" content="Academic deliverables for PXL work placements: WPL1 assignments and WPL2 final reflection." />
+<link rel="stylesheet" href="css/styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-<header class="nav" id="nav"></header>
-<main id="root"></main>
-<footer class="footer" id="footer"></footer>
-<script>window.PAGE = "wpl";</script>
-<script src="app.js"></script>
+<body class="wpl-page">
+
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html#home" class="logo">A<span>J</span>.</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#wpl2">WPL2 Case Study</a>
+      <a href="index.html#free">More</a>
+      <a href="wpl.html" class="active">WPL1 &amp; WPL2</a>
+      <a href="index.html#contact" class="btn-ghost">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-sub">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <span class="eyebrow">Academic deliverables</span>
+    <h1>WPL1 &amp; WPL2<br><span class="grad">Work Placement Archive</span></h1>
+    <p class="lead">All formal deliverables from my first-year (WPL1) and second-year (WPL2) work placements at PXL Hogeschool, organised and ready to download.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">WPL2</span>
+      <h2>Second-year placement</h2>
+      <p class="sub">Internship at Northwave Technologies — final reflection, presentation and case study.</p>
+    </div>
+    <div class="download-grid wide">
+      <a class="dl-card large" href="downloads/wpl2-reflection.pdf" download>
+        <i class="fa-solid fa-file-pdf"></i>
+        <span><strong>WPL2 Final Reflection</strong><small>PDF · ~1.2 MB</small></span>
+        <span class="dl-cta">Download <i class="fa-solid fa-arrow-down"></i></span>
+      </a>
+      <a class="dl-card large" href="downloads/wpl2-presentation.pdf" download>
+        <i class="fa-solid fa-file-powerpoint"></i>
+        <span><strong>WPL2 Final Presentation</strong><small>PDF · ~3.4 MB</small></span>
+        <span class="dl-cta">Download <i class="fa-solid fa-arrow-down"></i></span>
+      </a>
+      <a class="dl-card large" href="downloads/wpl2-case-study.pdf" download>
+        <i class="fa-solid fa-file-lines"></i>
+        <span><strong>WPL2 Case Study Report</strong><small>PDF · ~2.1 MB</small></span>
+        <span class="dl-cta">Download <i class="fa-solid fa-arrow-down"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">WPL1</span>
+      <h2>First-year placement</h2>
+      <p class="sub">All WPL1 assignments grouped as PDFs and a complete ZIP archive.</p>
+    </div>
+    <div class="download-grid wide">
+      <a class="dl-card large" href="downloads/wpl1-assignments.zip" download>
+        <i class="fa-solid fa-file-zipper"></i>
+        <span><strong>All WPL1 Assignments</strong><small>ZIP · complete archive</small></span>
+        <span class="dl-cta">Download ZIP <i class="fa-solid fa-arrow-down"></i></span>
+      </a>
+      <a class="dl-card large" href="downloads/wpl1-assignment-1.pdf" download>
+        <i class="fa-solid fa-file-pdf"></i>
+        <span><strong>Assignment 1 — Company Analysis</strong><small>PDF</small></span>
+        <span class="dl-cta">Download <i class="fa-solid fa-arrow-down"></i></span>
+      </a>
+      <a class="dl-card large" href="downloads/wpl1-assignment-2.pdf" download>
+        <i class="fa-solid fa-file-pdf"></i>
+        <span><strong>Assignment 2 — Job Shadow Report</strong><small>PDF</small></span>
+        <span class="dl-cta">Download <i class="fa-solid fa-arrow-down"></i></span>
+      </a>
+      <a class="dl-card large" href="downloads/wpl1-assignment-3.pdf" download>
+        <i class="fa-solid fa-file-pdf"></i>
+        <span><strong>Assignment 3 — Reflection</strong><small>PDF</small></span>
+        <span class="dl-cta">Download <i class="fa-solid fa-arrow-down"></i></span>
+      </a>
+    </div>
+
+    <div class="note">
+      <i class="fa-solid fa-circle-info"></i>
+      <p>Files are placeholders in this template — drop your actual PDFs and ZIP into the <code>downloads/</code> folder using the same filenames and they'll be served automatically.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Alex Janssens. Built with care in plain HTML, CSS &amp; JS.</p>
+    <a href="index.html#home" class="back-top">Back to portfolio <i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

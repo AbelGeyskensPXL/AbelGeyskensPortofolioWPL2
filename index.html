@@ -1,17 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Student Portfolio — PXL</title>
-<meta name="description" content="Personal portfolio showcasing projects, WPL case studies, and learning at PXL University.">
-<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alex Janssens — Student Portfolio</title>
+<meta name="description" content="Personal portfolio of Alex Janssens — Applied Computer Science student at PXL. Projects, WPL1 & WPL2 deliverables, skills and interests." />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-<header class="nav" id="nav"></header>
-<main id="root"></main>
-<footer class="footer" id="footer"></footer>
-<script>window.PAGE = "index";</script>
-<script src="app.js"></script>
+
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">A<span>J</span>.</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#wpl2">WPL2 Case Study</a>
+      <a href="#free">More</a>
+      <a href="wpl.html">WPL1 &amp; WPL2</a>
+      <a href="#contact" class="btn-ghost">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="eyebrow">Hello, I'm</span>
+      <h1>Alex Janssens<br><span class="grad">Applied Computer Science Student</span></h1>
+      <p class="lead">I build clean, functional web experiences. Currently studying at <strong>PXL Hogeschool</strong>, focusing on full-stack development, UI design, and meaningful student projects.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View my work <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>3+</strong><span>Years coding</span></div>
+        <div><strong>15+</strong><span>Projects shipped</span></div>
+        <div><strong>2</strong><span>Internships</span></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="profile-frame">
+        <img src="images/profile.jpg" alt="Portrait of Alex Janssens" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">01 — About</span>
+      <h2>About me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a third-year Applied Computer Science student at <strong>PXL Hogeschool</strong> in Hasselt, Belgium. My passion sits at the intersection of <em>clean code</em> and <em>thoughtful design</em> — I love building products that feel intuitive while being solid underneath.</p>
+        <p>Outside of class, I dive into side projects, contribute to small open-source libraries, and stay curious about new frameworks. I believe the best developers are also great communicators, so I make a point of explaining my work clearly to teammates and clients.</p>
+        <p>I'm currently looking for a graduate position where I can keep growing as a full-stack engineer while contributing real value from day one.</p>
+      </div>
+      <div class="skills">
+        <h3>Core skills</h3>
+        <div class="chips">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span>
+          <span>React</span><span>Node.js</span><span>Java</span><span>C#</span>
+          <span>SQL</span><span>Git</span><span>Figma</span><span>Agile / Scrum</span>
+        </div>
+        <h3>Competencies</h3>
+        <ul class="check-list">
+          <li><i class="fa-solid fa-check"></i> Full-stack web development</li>
+          <li><i class="fa-solid fa-check"></i> UI/UX design fundamentals</li>
+          <li><i class="fa-solid fa-check"></i> Database design &amp; modeling</li>
+          <li><i class="fa-solid fa-check"></i> Team collaboration &amp; code review</li>
+          <li><i class="fa-solid fa-check"></i> Technical writing &amp; documentation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">02 — Work</span>
+      <h2>Selected projects</h2>
+      <p class="sub">A few things I've built recently — across web, mobile, and data.</p>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-img"><img src="images/project1.jpg" alt="Analytics Dashboard" loading="lazy"></div>
+        <div class="project-body">
+          <h3>Insight — Analytics Dashboard</h3>
+          <p>A responsive dashboard for visualizing student survey data with filtering, charts, and CSV export.</p>
+          <div class="tech"><span>React</span><span>TypeScript</span><span>Chart.js</span><span>Tailwind</span></div>
+        </div>
+      </article>
+      <article class="project-card">
+        <div class="project-img"><img src="images/project2.jpg" alt="E-commerce platform" loading="lazy"></div>
+        <div class="project-body">
+          <h3>Marketly — E-commerce Platform</h3>
+          <p>Full-stack shop with cart, Stripe-style checkout flow, and an admin panel for managing inventory.</p>
+          <div class="tech"><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>EJS</span></div>
+        </div>
+      </article>
+      <article class="project-card">
+        <div class="project-img"><img src="images/project3.jpg" alt="Fitness tracking app" loading="lazy"></div>
+        <div class="project-body">
+          <h3>PulseFit — Fitness Tracker</h3>
+          <p>Mobile-first workout logger with streaks, goals and progress graphs. Built as a PWA so it installs on any device.</p>
+          <div class="tech"><span>JavaScript</span><span>IndexedDB</span><span>PWA</span><span>CSS Grid</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WPL2 CASE STUDY -->
+<section class="section" id="wpl2">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">03 — Case Study</span>
+      <h2>WPL2 — Internship at Northwave Technologies</h2>
+      <p class="sub">A deep look at my second-year work placement: what I built, what I learned, and what shipped.</p>
+    </div>
+
+    <div class="wpl2-cover">
+      <img src="images/wpl2-cover.jpg" alt="Internship workplace" loading="lazy">
+    </div>
+
+    <div class="case-grid">
+      <div class="case-block">
+        <h3>The project</h3>
+        <p>During my WPL2 placement at Northwave Technologies, I joined the internal tooling team building a workflow automation platform used by roughly 120 engineers across three offices. The system replaced a patchwork of spreadsheets and Slack threads with a single dashboard for tracking incident reviews, post-mortems, and follow-up actions.</p>
+        <p>My focus area was the <strong>action-tracking module</strong>: a sub-application that lets team leads create, assign, and audit follow-up tasks tied to incidents. The challenge was technical and human — the existing process was deeply embedded in muscle memory, so the new tool had to feel <em>faster</em> than the old workflow on day one, otherwise it wouldn't be adopted. We worked in two-week sprints, with weekly demo sessions where real users gave feedback we acted on immediately.</p>
+        <p>Over twelve weeks I went from "new intern shadowing senior devs" to owning a feature end-to-end: design discussions, ticket breakdown, implementation, code review, QA, and rollout. The final module shipped to production in week 10 and was used in three real incident reviews before my internship ended.</p>
+      </div>
+
+      <div class="case-block">
+        <h3>My contribution</h3>
+        <p>I was responsible for the entire front-end of the action-tracking module, plus the REST endpoints feeding it. Concretely, I built a sortable Kanban-style board, an assignment dialog with user search, real-time status updates via WebSockets, and the audit-log view that compliance needed.</p>
+        <p>On the back end I wrote the Node.js endpoints (with Express), added input validation with Zod, and worked with my mentor on the database migrations. I also wrote the unit tests for both layers using Jest, reaching about 78% coverage on the module I owned.</p>
+        <p>Beyond code, I participated in <strong>daily stand-ups</strong>, <strong>backlog refinement</strong>, and led one of the sprint demos. I documented the API in our shared Confluence space and recorded a five-minute Loom walkthrough for the support team. I also paired regularly with a senior developer, which taught me how to ask better questions and accept feedback without taking it personally.</p>
+      </div>
+
+      <div class="case-block">
+        <h3>What I learned</h3>
+        <ul class="check-list">
+          <li><i class="fa-solid fa-check"></i> Real product work means <strong>negotiating scope</strong>, not just writing features</li>
+          <li><i class="fa-solid fa-check"></i> Tests pay for themselves the first time you refactor</li>
+          <li><i class="fa-solid fa-check"></i> Clear PR descriptions get faster reviews than clever code</li>
+          <li><i class="fa-solid fa-check"></i> Users don't read docs — design has to communicate itself</li>
+          <li><i class="fa-solid fa-check"></i> Saying "I don't know yet, I'll find out" is a professional answer</li>
+        </ul>
+      </div>
+
+      <div class="case-block">
+        <h3>Results &amp; deliverables</h3>
+        <ul class="check-list">
+          <li><i class="fa-solid fa-trophy"></i> Module shipped to production in week 10</li>
+          <li><i class="fa-solid fa-trophy"></i> Adopted in 3 real incident reviews before end of placement</li>
+          <li><i class="fa-solid fa-trophy"></i> 78% unit-test coverage on owned code</li>
+          <li><i class="fa-solid fa-trophy"></i> Reduced average action-item turnaround from 6 days to 2</li>
+          <li><i class="fa-solid fa-trophy"></i> Final reflection &amp; presentation delivered to PXL</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="deliverables">
+      <h3>Slides, PDFs &amp; downloads</h3>
+      <div class="download-grid">
+        <a class="dl-card" href="downloads/wpl2-reflection.pdf" download>
+          <i class="fa-solid fa-file-pdf"></i>
+          <span><strong>Final Reflection</strong><small>PDF · 1.2 MB</small></span>
+        </a>
+        <a class="dl-card" href="downloads/wpl2-presentation.pdf" download>
+          <i class="fa-solid fa-file-powerpoint"></i>
+          <span><strong>Final Presentation</strong><small>PDF · 3.4 MB</small></span>
+        </a>
+        <a class="dl-card" href="downloads/wpl2-case-study.pdf" download>
+          <i class="fa-solid fa-file-lines"></i>
+          <span><strong>Case Study Report</strong><small>PDF · 2.1 MB</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE SECTION -->
+<section class="section section-alt" id="free">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">04 — Beyond Code</span>
+      <h2>Hobbies, interests &amp; extras</h2>
+      <p class="sub">There's more to me than commits — here's what fills the rest of the week.</p>
+    </div>
+
+    <div class="free-grid">
+      <div class="free-card">
+        <div class="free-icon"><i class="fa-solid fa-camera-retro"></i></div>
+        <h3>Photography</h3>
+        <p>I shoot mostly street and architecture with a Fujifilm X-T30. It teaches me to notice composition, light, and small details — which carries straight back into UI design.</p>
+      </div>
+      <div class="free-card">
+        <div class="free-icon"><i class="fa-solid fa-music"></i></div>
+        <h3>Music production</h3>
+        <p>I make lo-fi and ambient tracks in Ableton Live in my spare time. A few have ended up on small Spotify playlists, which is wildly satisfying.</p>
+      </div>
+      <div class="free-card">
+        <div class="free-icon"><i class="fa-solid fa-bicycle"></i></div>
+        <h3>Cycling</h3>
+        <p>Long road rides through Limburg most weekends. Best place to untangle a tricky bug is somewhere around kilometer 40.</p>
+      </div>
+      <div class="free-card">
+        <div class="free-icon"><i class="fa-solid fa-book-open"></i></div>
+        <h3>Reading</h3>
+        <p>Currently working through "Designing Data-Intensive Applications" and anything by Ted Chiang. Books in, ideas out.</p>
+      </div>
+      <div class="free-card">
+        <div class="free-icon"><i class="fa-solid fa-users"></i></div>
+        <h3>Volunteer coaching</h3>
+        <p>I help out at a local CoderDojo, teaching kids (8–14) the basics of Scratch and HTML. Explaining things to beginners forces me to actually understand them.</p>
+      </div>
+      <div class="free-card">
+        <div class="free-icon"><i class="fa-solid fa-globe"></i></div>
+        <h3>Languages</h3>
+        <p>Dutch (native), English (fluent), French (conversational), and slowly chipping away at Japanese with Anki.</p>
+      </div>
+    </div>
+
+    <div class="extra-projects">
+      <h3>Additional side projects</h3>
+      <div class="mini-projects">
+        <div class="mini-card"><i class="fa-solid fa-cloud-sun"></i><div><h4>Tinyweather</h4><p>A 3 KB no-JS weather widget you can drop into any blog.</p></div></div>
+        <div class="mini-card"><i class="fa-solid fa-keyboard"></i><div><h4>Keycap.io</h4><p>Open-source mechanical keyboard layout visualizer.</p></div></div>
+        <div class="mini-card"><i class="fa-solid fa-leaf"></i><div><h4>GreenPing</h4><p>Browser extension that estimates a page's carbon footprint.</p></div></div>
+        <div class="mini-card"><i class="fa-solid fa-clock"></i><div><h4>Pomos</h4><p>Minimal Pomodoro timer PWA with weekly stats.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker">05 — Contact</span>
+      <h2>Let's work together</h2>
+      <p class="sub">Open to graduate roles, freelance briefs and friendly chats.</p>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:alex.janssens@student.pxl.be" class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+        <div><strong>Email</strong><span>alex.janssens@student.pxl.be</span></div>
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="contact-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <div><strong>LinkedIn</strong><span>linkedin.com/in/alex-janssens</span></div>
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener" class="contact-card">
+        <i class="fa-brands fa-github"></i>
+        <div><strong>GitHub</strong><span>github.com/alex-janssens</span></div>
+      </a>
+      <a href="https://dribbble.com/" target="_blank" rel="noopener" class="contact-card">
+        <i class="fa-brands fa-dribbble"></i>
+        <div><strong>Dribbble</strong><span>dribbble.com/alex-janssens</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Alex Janssens. Built with care in plain HTML, CSS &amp; JS.</p>
+    <a href="#home" class="back-top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
